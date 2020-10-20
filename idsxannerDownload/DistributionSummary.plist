@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>idSxanner.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>1A29E91925B149547F43E0C810FE0EDAE9CE989E</string>
+				<key>dateExpires</key>
+				<string>6/28/21</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>79RR2QQ9Z2.org.reactjs.native.example.idSxanner</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>79RR2QQ9Z2</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>idSxanner.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>41bc4d75-b6fc-4b9c-aa18-eef10c01a59e</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: org.reactjs.native.example.idSxanner</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>79RR2QQ9Z2</string>
+				<key>name</key>
+				<string>Ean Solutions LLC</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -9,11 +9,7 @@
 	<key>manifest</key>
 	<dict>
 		<key>appURL</key>
-		<string>https://www.eansolutions.com</string>
-		<key>displayImageURL</key>
-		<string>https://www.eansolutions.com</string>
-		<key>fullSizeImageURL</key>
-		<string>https://www.eansolutions.com</string>
+		<string>https://www.idsxanner.com</string>
 	</dict>
 	<key>method</key>
 	<string>ad-hoc</string>

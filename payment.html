@@ -6,11 +6,12 @@
 </head>
 
 <body>
+<div style="margin-top: 100px"></div>
 <!--<script src="https://www.paypal.com/sdk/js?client-id=AZsAuNg6ctFtgYSRulnMBrC&#45;&#45;rHqT8Vv5EJvQ6M6kGal7gJsYKdYEK3XOU3ksVK7VHRLiM8WAnj_POs2"></script>-->
 <div id="smart-button-container">
-    <div style="text-align: center"><label for="description"> </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
-    <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
-    <div style="text-align: center"><label for="amount"> </label><input name="amountInput" type="number" id="amount" value="" ><span> USD</span></div>
+    <!--<div style="text-align: center"><label for="description"> </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""><span> Description </span></div>
+    <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>-->
+    <div style="text-align: center"><label for="amount"> </label><input name="amountInput" type="number" id="amount" value="" ><span> USD </span></div>
     <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
     <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
     <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
@@ -19,15 +20,15 @@
 <script src="https://www.paypal.com/sdk/js?client-id=AZsAuNg6ctFtgYSRulnMBrC--rHqT8Vv5EJvQ6M6kGal7gJsYKdYEK3XOU3ksVK7VHRLiM8WAnj_POs2&currency=USD" data-sdk-integration-source="button-factory"></script>
 <script>
   function initPayPalButton() {
-    var description = document.querySelector('#smart-button-container #description');
+    /*var description = document.querySelector('#smart-button-container #description');*/
     var amount = document.querySelector('#smart-button-container #amount');
-    var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+    /*var descriptionError = document.querySelector('#smart-button-container #descriptionError');*/
     var priceError = document.querySelector('#smart-button-container #priceLabelError');
     var invoiceid = document.querySelector('#smart-button-container #invoiceid');
     var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
     var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
 
-    var elArr = [description, amount];
+    var elArr = [amount];
 
     if (invoiceidDiv.firstChild.innerHTML.length > 1) {
       invoiceidDiv.style.display = "block";
@@ -70,11 +71,11 @@
       },
 
       onClick: function () {
-        if (description.value.length < 1) {
+        /*if (description.value.length < 1) {
           descriptionError.style.visibility = "visible";
         } else {
           descriptionError.style.visibility = "hidden";
-        }
+        }*/
 
         if (amount.value.length < 1) {
           priceError.style.visibility = "visible";
@@ -88,7 +89,7 @@
           invoiceidError.style.visibility = "hidden";
         }
 
-        purchase_units[0].description = description.value;
+        /*purchase_units[0].description = description.value;*/
         purchase_units[0].amount.value = amount.value;
 
         if(invoiceid.value !== '') {
